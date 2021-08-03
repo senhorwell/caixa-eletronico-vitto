@@ -7,3 +7,6 @@
 - Bootstrap 4.3.1
 
 Espero que gostem do layout e do código. Foi feito da forma mais simples possivel, porém já estou pensando em formas diferentes de modificar
+
+###### Para rodar:
+- php -S localhost:8080 .\index.php

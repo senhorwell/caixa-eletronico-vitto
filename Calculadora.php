@@ -1,9 +1,6 @@
 <?php
 class Calculadora {
 	public function calcula($caixa) {
-		if(!isset($_SESSION["total"])){
-            $_SESSION["total"] = 10000;
-        }
         if(!isset($caixa) || $caixa == 0){
             return;
         }
@@ -16,25 +13,25 @@ class Calculadora {
         $dois = 0;
         $um = 0;
         while($caixa > 0) {
-            if($caixa >=100){
+            if($caixa >= 100){
                 $cem+=1;
                 $caixa-=100;
-           }else if($caixa >=50){
+           }else if($caixa >= 50){
                 $cinquenta+=1;
                 $caixa-=50;
-           }else if($caixa >=20){
+           }else if($caixa >= 20){
                 $vinte+=1;
                 $caixa-=20;
-            }else if($caixa >=10){
+            }else if($caixa >= 10){
                 $dez+=1;
                 $caixa-=10;
-            }else if($caixa >=5){
+            }else if($caixa >= 5){
                 $cinco+=1;
                 $caixa-=5;
-            }else if($caixa >=2){
+            }else if($caixa >= 2){
                 $dois+=1;
                 $caixa-=2;
-            }else if($caixa >=1){
+            }else if($caixa >= 1){
                 $um+=1;
                 $caixa-=1;
             }
